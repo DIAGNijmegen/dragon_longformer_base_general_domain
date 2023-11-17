@@ -9,8 +9,8 @@ class DragonBaselineLongformerBaseEnglish4096(DragonBaseline):
         """
         super().__init__(**kwargs)
         self.model_name = "allenai/longformer-base-4096"
-        self.per_device_train_batch_size = 4
-        self.gradient_accumulation_steps = 2
+        self.per_device_train_batch_size = 1
+        self.gradient_accumulation_steps = 8
         self.gradient_checkpointing = False
         self.max_seq_length = 4096
         self.learning_rate = 1e-05
