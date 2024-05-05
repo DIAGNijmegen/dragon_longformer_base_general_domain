@@ -1,7 +1,7 @@
 from dragon_baseline import DragonBaseline
 
 
-class DragonBaselineLongformerBaseEnglish4096(DragonBaseline):
+class DragonLongformerBaseGeneralDomain(DragonBaseline):
     def __init__(self, **kwargs):
         """
         Adapt the DRAGON baseline to use the allenai/longformer-base-4096 model.
@@ -12,9 +12,9 @@ class DragonBaselineLongformerBaseEnglish4096(DragonBaseline):
         self.per_device_train_batch_size = 1
         self.gradient_accumulation_steps = 8
         self.gradient_checkpointing = False
-        self.max_seq_length = 4096
+        self.max_seq_length = 512
         self.learning_rate = 1e-05
 
 
 if __name__ == "__main__":
-    DragonBaselineLongformerBaseEnglish4096().process()
+    DragonLongformerBaseGeneralDomain().process()

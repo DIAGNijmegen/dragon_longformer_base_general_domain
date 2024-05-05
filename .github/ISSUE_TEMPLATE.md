@@ -1,4 +1,4 @@
-* DRAGON Baseline Longformer Base English 4096 version:
+* DRAGON Longformer Base General-domain version:
 * Python version:
 * Operating System:
 
